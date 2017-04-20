@@ -1,0 +1,12 @@
+*.py~
+*.pyc
+*.log
+db.sqlite3
+local_settings.py
+
+planette/settings/testing.py
+planette/settings/production.py
+zappa_settings.json
+
+planette/staticfiles
+thumbnails/
