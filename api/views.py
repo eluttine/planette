@@ -7,6 +7,6 @@ from api.serializers import PostSerializer
 
 @api_view(['GET'])
 def post_list(request):
-    posts = Post.objects.all().order_by('-date_modified')[:30]
+    posts = Post.site_objects.all().order_by("-date_modified")[:40]
     serializer = PostSerializer(posts, many=True)
     return Response(serializer.data)

@@ -27,6 +27,11 @@ ALLOWED_HOSTS = [
     'localhost',
 ]
 
+CORS_ORIGIN_WHITELIST = (
+    'localhost:8080',
+)
+
+
 # Application definition
 
 INSTALLED_APPS = (
@@ -96,9 +101,10 @@ SITE_ID = 1
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
-PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 STATIC_URL = '/thumbnails/'
+MEDIA_URL = 'http://localhost:8000/'
 
 # Extra places for collectstatic to find static files.
 STATICFILES_DIRS = (
