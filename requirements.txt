@@ -8,7 +8,7 @@ boto3==1.4.4
 botocore==1.5.31
 click==6.7
 decorator==4.0.11
-Django==1.8.17
+Django==1.8.18
 django-appconf==1.0.2
 django-cors-headers==2.0.0
 django-forms-bootstrap==3.0.1
@@ -62,4 +62,4 @@ w3lib==1.14.1
 wcwidth==0.1.7
 Werkzeug==0.12
 wsgi-request-logger==0.4.6
-zappa==0.40.0
+zappa==0.44.3
